@@ -1,6 +1,6 @@
 ﻿#Specify the name of the PC or the list of PCs, separated by commas
-$NamePC = "Name PC"
-Invoke-Command -ComputerName $NamePC -Scriptblock {
+$Computers = "Name PC"
+Invoke-Command -ComputerName $Computers -Scriptblock {
 
 #Standard preliminary step - Uninstall Client Config Manager
  cmd.exe /c "C:\Windows\ccmsetup\ccmsetup.exe /uninstall"
